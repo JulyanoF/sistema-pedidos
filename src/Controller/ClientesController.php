@@ -54,6 +54,7 @@ class ClientesController extends AppController
             $this->Flash->error(__('The cliente could not be saved. Please, try again.'));
         }
         $this->set(compact('cliente'));
+        $this->render('form');
     }
 
     /**
@@ -76,6 +77,7 @@ class ClientesController extends AppController
             $this->Flash->error(__('The cliente could not be saved. Please, try again.'));
         }
         $this->set(compact('cliente'));
+        $this->render('form');
     }
 
     /**
